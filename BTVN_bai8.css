@@ -1,0 +1,162 @@
+a {
+    text-decoration: none;
+}
+
+td {
+    height: 35px;
+}
+
+.nav {
+    background-color: #2aa1e6;
+    font-family: Roboto, sans-serif;
+    padding: 20px;
+    color: white;
+
+    a {
+        margin: 10px;
+    }
+    a:link {
+        color: #b8dff4;
+    }
+    a:hover {
+        color: white;
+    }
+}
+
+.logo {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    background-color: #dcdcdc;
+}
+
+.display-left {
+    width: 1376.72px; 
+    height: 394.39px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.display-right {
+    width: 20%; 
+    height: 1700px; 
+    margin-left: 30px; 
+    background-color: #dcdcdc; 
+    border-radius: 5px;
+}
+
+/* Chỉnh sửa box Đăng nhập */
+.login {
+    width: 100%;
+    height: 194px;
+    background-color: white;
+    margin-bottom: 20px;
+
+    .border {
+        border-collapse: collapse;
+        border-color: #2ca2e6;
+        border-left: 0px;
+        border-right: 0px;
+        color: #2ca2e6;
+        td {
+            padding-left: 10px;
+            color: #2ca2e6;
+        }
+        a {
+            color: #2ca2e6;
+        }
+    }
+}
+
+/* Chỉnh sửa box Tính năng */
+.features {
+    background-color: white;
+    width: 100%;
+    height: 543px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    .border {
+        border-collapse: collapse;
+        border-color: #2ca2e6;
+        color: #2ca2e6;
+        border-right: 0px;
+        border-left: 0px;
+        td {
+            padding-left: 10px;
+            color: #2ca2e6;
+        }
+        a {
+            color: #2ca2e6;
+        }
+    }
+}
+
+/* Chỉnh sửa box Cài đặt App Mobile */
+.install-app-mobile {
+    background-color: white;
+    width: 100%;
+    height: 563px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+/* Chỉnh box Thông báo */
+.notify {
+    display: flex;
+    background-color: white;
+    a {
+        color: #2ca2e6;
+    }
+    margin-bottom: 30px;
+
+    .border {
+        border-collapse: collapse;
+        border-color: #2096af;
+        border-left: 0px;        /* Chỉnh border bên trái về 0px*/
+        border-right: 0px;
+        width: 100%;
+        td {
+            padding-left: 10px;
+            a {
+                color: #495067;
+            }
+        }
+
+        label {
+            float: right; 
+            color: #868E96; 
+            font: 13px Roboto, 
+            sans-serif; 
+            padding-top: 5px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.guide {
+    background-color: white;
+    .border {
+        border-collapse: collapse;
+        border: 0px;
+        width: 100%;
+        td {
+            padding-left: 10px;
+            a {
+                color: #495067;
+            }
+        }
+
+        label {
+            float: right; 
+            color: #868E96; 
+            font: 13px Roboto, 
+            sans-serif; 
+            padding-top: 5px;
+            padding-right: 10px;
+        }
+    }
+}

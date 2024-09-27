@@ -1,0 +1,41 @@
+h1 {
+    color: white
+}
+
+/* body {
+    background-color: grey;
+} */
+
+.title {
+    color: yellowgreen;
+    font-size: 50px;
+    text-align: center;
+}
+
+#title2 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1.red {
+    color: "red";
+}
+
+div b {
+    color:red;
+}
+
+a:link {color:red}
+a:visited {color:green}
+a:active {color:yellow}
+
+p{font-size:12pt; line-height:12pt;}
+p:first-letter {font-size: 200%; float:left; }
+SPAN {text-transform: uppercase; }
+
+.hw {
+    background-color:royalblue;
+    margin: 10px auto;
+    padding: 50px;
+}

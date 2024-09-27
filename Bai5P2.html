@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <div>
+            <font size="30">
+                <b>Cạnh Huyền Tam</b><br>
+                <b>Giác Vuông</b>
+            </font>
+        </div>
+        <br>
+        <table border="1">
+                <tr>
+                    <td bgcolor="green">
+                        <form oninput="CanhHuyen.value=( Math.sqrt(Math.pow( (parseInt(CanhA.value))) + Math.pow( parseInt( CanhB.value ) ) ) )"></form>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="green">
+                        Cạnh A: <input type="number" id="CanhA" min="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="green">
+                        Cạnh B: <input type="number" id="CanhB" min="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="green">
+                        Cạnh Huyền: <ouput name="CanhHuyen" for="CanhA, CanhB"></ouput>
+                    </td>
+                </tr>
+
+        </table>
+    </body>
+
+</html>

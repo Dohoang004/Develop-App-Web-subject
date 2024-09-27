@@ -1,0 +1,109 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Link External Java File -->
+        <script src="bai10.js"></script> 
+    </head>
+    <body>
+        <script>
+            // document.write("Hello World! <br> ");
+            // document.write(name + "<br>");
+            
+            document.write("Chu vi HCN: " + chuViHCN + "<br>");
+            
+            var sum = calculateSum(4, 5);   
+            document.write("Sum:" + sum + "<br>");
+
+            var address = {
+                city: "Hà Nội",
+                district: "Cầu Giấy"
+            };
+            // Object 
+            var studentInfo = {
+                name: "Nguyễn Văn Minh", 
+                age: 20,
+                sex: "male",
+                address: address,
+                studying: true
+            };
+
+            // khởi tạo thêm major vào Object
+            studentInfo.major = "Information Technology <br>";
+            studentInfo.address.country = "Việt Nam <br>";
+            document.write(studentInfo.major);
+            document.write(studentInfo.address.country);
+
+
+            // // In ra thông tin học sinh
+            // var info = "Name: " + studentInfo.name + "<br>" 
+            //             + "Age: " + studentInfo.age + "<br>"
+            //             + "Sex: " + studentInfo.sex + "<br>"
+            //             + "City: " + studentInfo.address.city + "<br>"
+            //             + " District: " + studentInfo.address.district +"<br>"
+            //             + ("Studying: " + studentInfo.studying ? "Đang học" : "Đã nghỉ") + "<br>";
+            // document.write(info);
+
+            // Hàm in ra thông tin học sinh
+            getInfo(studentInfo);
+
+                                            /* Các hàm phổ biến */
+            var name = "This is a String";
+            // Cách dùng hàm length
+            document.write("<br>" + "Length of this string is: " + name.length + "<br>");
+            // Cách dùng hàm typeof()
+            document.write("Type of this string is: " + typeof(name) + "<br>");
+            // Lấy giá trị của 1 vị trí element trong String
+            document.write( name[0] + name[1] + name[2] + name[3] + name[4]
+                            + name[5] + name[6] + name[7] + name[8] + name[9]
+                            + name[10] + name[11] + name[12] + name[13] + name[14] 
+                            + name[15]+ "<br>");
+            // Hiển thị chuỗi từ vị trị 10 đến 15
+            document.write(name.slice(10,16) + "<br>");
+            // Thay chuỗi "a" thành "b"
+            document.write(name.replace("String", "Replaced String" + "<br>"));
+            // Chỉnh văn bản thành viết hoa hoặc viết thường
+            document.write(name.toUpperCase() + "<br>");
+            document.write(name.toLowerCase() + "<br>");
+            // Lấy vị trí 1 element trong String
+            document.write("Position of element 'i' in the string is: " + name.indexOf("i") + "<br>");
+            // Cắt các String thành các sub string với mỗi kí tự " "
+            document.write(name.split(" ") + "<br>");
+            // Thêm biến vào text khi print
+            document.write(`This string context is: ${name} ` + "<br>");
+            // Kiểm tra xem biến có bắt đầu với 1 đoạn text không
+            var result = name.startsWith("This");
+            if (result == true) {
+                document.write("True" + "<br>");
+            }
+            else {
+                document.write("False" + "<br>");
+            }
+            // Ép kiểu String thành Int
+            var str = "123";
+            var result = Number(str);
+            /*  parseInt() và parseFloat()
+                parseInt(): Chuyển đổi chuỗi thành số nguyên
+                parseFloat(): Chuyển dổi chuỗi thành số thực
+            */
+            document.write(parseInt("10.5" + "<br>"));
+            document.write(parseFloat("10.5" + "<br>"));
+            //
+            // var pi = 3.14;
+            // document.write(pi.toFixed(2));
+            
+            /*
+            -Kiểm tra số
+            -isNN(): Kiểm tra xem một giá trị có phải là NaN (Not a number) hay không
+            -isFinite(): Kiểm tra xem một giá trị có phải là số hữu hạn hay không
+
+            isNan(NaN);
+            isFinite(10);
+            */
+
+
+        </script>
+    </body>
+</html>

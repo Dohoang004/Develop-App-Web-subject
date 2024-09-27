@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Bai 3 Ly thuyet</h1>
+    </head>
+    <body>
+        
+        <input type="reset" name="reset">
+        <br><br>
+
+        Nhập chữ cái: <input type="letter" name="letter" placeholder="Chữ cái">
+        <br><br>
+
+        <h3> Chọn giới tính: <br> </h3>
+        <input type="radio" name="sex" value="male"> Male
+        <br>
+        <input type="radio" name="sex" value="female"> Female
+        <br>
+        <input type="radio" name="sex" value="unknown"> Unknown
+        <br>
+        <input type="submit" name="submit sex">
+        <br><br><br>
+        
+
+        <h3> Things you like: <br> </h3> 
+        Game: <input type="checkbox" name="hobby" value="game"> <br>
+        Music: <input type="checkbox" name="hobby" value="music"> <br>
+        Movie: <input type="checkbox" name="hobby" value="movie"> <br>
+        <input type="submit" name="submit hobbies">
+
+        <br><br><br>
+
+        <h3> Choose your browser: </h3> <br>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="1"> Internet Explorer </option>
+            <option value="2"> Chrome </option>
+            <option value="3"> Fire Fox </option>
+            <option value="4"> Cốc Cốc </option>
+            <option value="5"> Safari </option>
+        </datalist>
+
+        <br> <br> <br>
+
+        <h3> Chỉnh âm lượng: </h3>
+        0 <input type="range" id="a" value="50"> 100
+
+        <br> <br> <br>
+
+        <h3> Chỉnh âm lượng: </h3>
+        <input type="number" name="quantity" min="1" max="10" step="0.25" value="5">
+    </form>
+
+    <br><br><br>
+
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        10 <input type="range" id="a" value="50"> 100 +
+        <input type="number" id="b" value="50"> =
+        <output name="x" for="a b"></output>
+    </form>
+
+    <br><br><br>
+
+    <form oninput="x.value=( parseInt(a.value) + parseInt(b.value) + parseInt(c.value) )/3">
+        Số A: <input type="number" id="a" value="0">
+        <br>
+        Số B: <input type="number" id="b" value="0">
+        <br>
+        Số C: <input type="number" id="c" value="0">
+        <br>
+        Trung bình cộng 3 số = <output name="x" for="a b c"></output>
+        <br>
+        <input type="button" value="Send">
+    </form>
+
+    <form>
+        <br><br><br>
+        <input type="reset" value="reset">    <br>
+        Năm: <input type="text" name="year" placeholder="2024" readonly>    <br>
+        Họ: <input type="text" name="name" placeholder="Họ">    <br>
+        <input type="button" value="Send">  <br>
+    </form>
+
+    <br><br><br>
+
+    <form oninput="ChuVi.value=( (parseFloat(ChieuDai.value) + parseFloat(ChieuRong.value))*2 )">
+        Chiều Dài: <input type="number" id="ChieuDai" value="2" min="1" required>
+        <br>
+        Chiều Rộng: <input type="number" id="ChieuRong" value="1" min="1" required>
+        <br>
+        Chu Vi hình chữ nhật là: <output name="ChuVi" for="ChieuDai, ChieuRong"></output>
+        <br>
+        <input type="submit" value="Send"   >
+    </form>
+
+    <br><br><br>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <heud>
+        Bai 2: Ly thuyet
+    </head>
+    <body>
+        <!-- Danh sách (List) -->
+
+            <!-- ol là có thự tự -->
+            <ol>
+                <li> Thức dậy</li>
+                <li> Ăn sáng</li>
+                <li> Đi học</li>
+                <li> Làm bài</li>
+            </ol>
+            
+            <!-- ul là không có thứ tự -->
+            <ul>
+                <li> Thức dậy</li>
+                <li> Ăn sáng</li>
+                <li> Đi học</li>
+                <li> Làm bài</li>
+            </ul>
+
+        <!-- Bài tập thực hành -->
+            <table border = "3">
+                <caption>
+                    <font size="55">
+                        Bảng thông tin cá nhân
+                    </font>
+                </caption>
+                <tr>
+                    <th align="center"><h5> Họ và tên</h5></th>
+                    <th align="center"><h5> Giới tính</h5></th>
+                    <th align="center"><h5> Năm sinh</h5></th>
+                    <th align="center"><h5> Chuyên nghành</h5></th>
+                    <th align="center"><h5> Khoá</h5></th>
+                    <th align="center"><h5> Số điện thoại</h5></th>
+                    <th align="center"><h5> Email</h5></th>
+                    <th align="center"><h5> Ảnh</h5></th>
+                </tr>
+                
+                <tr>
+                    <td> PUG</td>
+                    <td> Năm</td>
+                    <td> 1999</td>
+                    <td> abc</td>
+                    <td> 61</td>
+                    <td> 09999999</td>
+                    <td> Pug@gmail.com</td>
+                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5xg__x7SnBUhlASWsQTeVeNBqFtC4FhjcA&s"></td>
+                </tr>
+
+                <form>
+                    Năm: <input type="text" name="Year" placeholder="2024" readonly>
+                    <br><br>
+
+                    Họ: <input type="text" name="firstname" placeholder="Nhập Họ">
+                    <br><br>
+
+                    Tên:<input type="text" name="lastname" placeholder="Nhập Tên">
+                    <br><br>
+
+                    Nhập giới thiệu về bản thân: 
+                    <div>
+                        <textarea name="Giới thiệu" placeholder="Nhập giới thiệu" cols="100" rows="10"></textarea>
+                    </div>
+                    <br><br>
+
+                    Nhập email: <input type="email" name="email" placeholder="Nhập email">
+                    <br><br>
+
+                    <input type="tel" name="telephone" placeholder="Dạng số: 1-234-567-8910" required size="10" pattern="([0-9]{1}([3:9:5]{1})([0-9]{8}))">
+                    <input type="submit" name="submit">
+                    <br><br>
+
+    </body>
+</html>
